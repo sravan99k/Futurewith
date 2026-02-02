@@ -1,0 +1,409 @@
+import { Phase, TopicFolder } from '../types';
+
+// All 19 folders for Phase 1 - Python Foundations
+
+const folders: TopicFolder[] = [
+    {
+        id: 'folder-1',
+        name: '1. Fundamentals',
+        description: 'Master Python syntax, variables, data types, and basic operations',
+        topics: [
+            {
+                id: '1-1-1',
+                title: 'Python Fundamentals',
+                description: 'Learn Python syntax, variables, data types, and basic operations',
+                duration: '3-4 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/1-fundamentals/step1-python-fundamentals.md'
+            },
+            {
+                id: '1-1-2',
+                title: 'Python Fundamentals Practice',
+                description: 'Hands-on exercises to reinforce Python basics',
+                duration: '2-3 hours',
+                type: 'practice',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/1-fundamentals/step2-python-fundamentals-pratice.md'
+            },
+            {
+                id: '1-1-3',
+                title: 'Python Fundamentals Cheat Codes',
+                description: 'Quick reference guide for Python essentials',
+                duration: '1 hour',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/1-fundamentals/step3-python-fundamentals-cheatcodes.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-2',
+        name: '2. Data Structures',
+        description: 'Lists, tuples, dictionaries, and sets in Python',
+        topics: [
+            {
+                id: '1-2-1',
+                title: 'Data Structures Guide',
+                description: 'Comprehensive guide to Python data structures',
+                duration: '3 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/2-data/step1-data-structures-guide.md'
+            },
+            {
+                id: '1-2-2',
+                title: 'Data Structures Practice',
+                description: 'Practice problems for mastering data structures',
+                duration: '2 hours',
+                type: 'practice',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/2-data/step2-data-structures-practice_questions.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-3',
+        name: '3. Control Structures',
+        description: 'If statements, loops, and control flow in Python',
+        topics: [
+            {
+                id: '1-3-1',
+                title: 'Control Structures Guide',
+                description: 'Complete guide to if statements, loops, and control flow',
+                duration: '2 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/3-control structures/step1-control_structures_complete_guide.md'
+            },
+            {
+                id: '1-3-2',
+                title: 'Control Structures Practice',
+                description: 'Practice problems for loops and conditionals',
+                duration: '2 hours',
+                type: 'practice',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/3-control structures/step2-control_structures_practice_questions.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-4',
+        name: '4. File Handling',
+        description: 'Read and write files, work with different file formats',
+        topics: [
+            {
+                id: '1-4-1',
+                title: 'File Handling Guide',
+                description: 'Learn file I/O operations in Python',
+                duration: '2 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/4-file handling/step1-file_handling_complete_guide.md'
+            },
+            {
+                id: '1-4-2',
+                title: 'File Handling Practice',
+                description: 'Practice file operations',
+                duration: '2 hours',
+                type: 'practice',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/4-file handling/step2-file_handling_practice_questions.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-5',
+        name: '5. Object-Oriented Programming',
+        description: 'Classes, objects, inheritance, and polymorphism',
+        topics: [
+            {
+                id: '1-5-1',
+                title: 'OOP Complete Guide',
+                description: 'Master classes, objects, and OOP principles',
+                duration: '4 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/5-oop\'s/step1-oop_complete_guide.md'
+            },
+            {
+                id: '1-5-2',
+                title: 'OOP Practice',
+                description: 'Build classes and practice OOP concepts',
+                duration: '3 hours',
+                type: 'practice',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/5-oop\'s/step2-oop_practice_questions.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-6',
+        name: '6. Error Handling & Debugging',
+        description: 'Try-except blocks, debugging techniques',
+        topics: [
+            {
+                id: '1-6-1',
+                title: 'Error Handling Guide',
+                description: 'Master exception handling and debugging',
+                duration: '2 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/6-error handling/step1-error_handling_debugging_complete_guide.md'
+            },
+            {
+                id: '1-6-2',
+                title: 'Error Handling Practice',
+                description: 'Practice writing robust error-handling code',
+                duration: '2 hours',
+                type: 'practice',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/6-error handling/step2-error_handling_debugging_practice_questions.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-7',
+        name: '7. Modules & Packages',
+        description: 'Import modules, create packages, use built-in libraries',
+        topics: [
+            {
+                id: '1-7-1',
+                title: 'Modules & Packages Guide',
+                description: 'Learn to organize code with modules and packages',
+                duration: '2 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/7-modules/step1-modules_packages_complete_guide.md'
+            },
+            {
+                id: '1-7-2',
+                title: 'Modules Practice',
+                description: 'Create and use your own modules',
+                duration: '2 hours',
+                type: 'practice',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/7-modules/step2-modules_packages_practice_questions.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-8',
+        name: '8. Python Libraries',
+        description: 'Essential Python libraries and how to use them',
+        topics: [
+            {
+                id: '1-8-1',
+                title: 'Python Libraries Guide',
+                description: 'Explore popular Python libraries',
+                duration: '3 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/8-libraries/step1-modules_packages_complete_guide.md'
+            },
+            {
+                id: '1-8-2',
+                title: 'Libraries Practice',
+                description: 'Work with popular libraries',
+                duration: '2 hours',
+                type: 'practice',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/8-libraries/step2-modules_packages_practice_questions.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-9',
+        name: '9. Modern Features',
+        description: 'F-strings, list comprehensions, generators, decorators',
+        topics: [
+            {
+                id: '1-9-1',
+                title: 'Modern Python Features',
+                description: 'Master modern Python syntax and patterns',
+                duration: '3 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/9-modern features/step1-modern_features_complete_guide.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-10',
+        name: '10. Performance Optimization',
+        description: 'Make your Python code faster and more efficient',
+        topics: [
+            {
+                id: '1-10-1',
+                title: 'Performance Optimization',
+                description: 'Optimize Python code for better performance',
+                duration: '2 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/10-performace optimization/step1-performance_optimization_complete_guide.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-11',
+        name: '11. Practical Projects',
+        description: 'Build real-world Python projects',
+        topics: [
+            {
+                id: '1-11-1',
+                title: 'Practical Projects Guide',
+                description: 'Step-by-step real-world project tutorials',
+                duration: '5 hours',
+                type: 'project',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/11-pratical projects/step1-practical_projects_complete_guide.md'
+            },
+            {
+                id: '1-11-2',
+                title: 'Project Practice Questions',
+                description: 'Additional project challenges',
+                duration: '3 hours',
+                type: 'project',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/11-pratical projects/step2-practical_projects_practice_questions.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-12',
+        name: '12. AI Tools Integration',
+        description: 'Integrate AI tools and APIs into Python projects',
+        topics: [
+            {
+                id: '1-12-1',
+                title: 'AI Tools Integration',
+                description: 'Connect Python to AI services and APIs',
+                duration: '3 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/12-AI tools integration/step1-ai_tools_integration_complete_guide.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-13',
+        name: '13. Automation',
+        description: 'Automate tasks with Python scripts',
+        topics: [
+            {
+                id: '1-13-1',
+                title: 'Automation Projects',
+                description: 'Build automation scripts and bots',
+                duration: '3 hours',
+                type: 'project',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/13-Automation/step1-automation_projects_complete_guide.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-14',
+        name: '14. Industry Applications',
+        description: 'Real-world Python applications in different industries',
+        topics: [
+            {
+                id: '1-14-1',
+                title: 'Industry Applications',
+                description: 'Explore Python use cases across industries',
+                duration: '2 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/14-industry application/step1-industry_applications_complete_guide.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-15',
+        name: '15. Sustainability Use Cases',
+        description: 'Python for environmental and sustainability projects',
+        topics: [
+            {
+                id: '1-15-1',
+                title: 'Sustainability Projects',
+                description: 'Use Python for environmental impact',
+                duration: '2 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/15-Sustainability use cases/step1-sustainability_use_cases_complete_guide.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-16',
+        name: '16. Problem Solving Mindset',
+        description: 'Develop algorithmic thinking and problem-solving skills',
+        topics: [
+            {
+                id: '1-16-1',
+                title: 'Problem Solving',
+                description: 'Build critical thinking and problem-solving skills',
+                duration: '2 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/16-problem sloving mindset/step1-problem_solving_mindset_complete_guide.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-17',
+        name: '17. Async Programming & Testing',
+        description: 'Asynchronous programming, testing, and production code',
+        topics: [
+            {
+                id: '1-17-1',
+                title: 'Async Programming',
+                description: 'Master asynchronous programming in Python',
+                duration: '3 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/17-Async programming/step1-async_programming_theory.md'
+            },
+            {
+                id: '1-17-2',
+                title: 'Python Testing',
+                description: 'Unit testing and TDD in Python',
+                duration: '3 hours',
+                type: 'practice',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/17-Async programming/step2-python_testing_practice.md'
+            },
+            {
+                id: '1-17-3',
+                title: 'Production Python',
+                description: 'Best practices for production code',
+                duration: '2 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/17-Async programming/step3-production_python_cheatsheet.md'
+            },
+            {
+                id: '1-17-4',
+                title: 'Testing Interview Prep',
+                description: 'Common testing interview questions',
+                duration: '2 hours',
+                type: 'exercise',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/17-Async programming/step4-python_testing_interview_prep.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-18',
+        name: '18. Comprehensive Quizzes',
+        description: 'Test your knowledge with comprehensive assessments',
+        topics: [
+            {
+                id: '1-18-1',
+                title: 'Comprehensive Assessment',
+                description: 'Full assessment covering all Python fundamentals',
+                duration: '1 hour',
+                type: 'assessment',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/18-comprehensive quizess/step1-comprehensive_quizzes_assessment.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-19',
+        name: '19. Cheat Codes',
+        description: 'Quick reference for all Python concepts',
+        topics: [
+            {
+                id: '1-19-1',
+                title: 'Python Cheat Sheet',
+                description: 'Complete Python reference guide',
+                duration: '30 min',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-1-python-foundations/19-cheat codes/python_cheat_sheets_quick_reference.md'
+            }
+        ]
+    }
+];
+
+// Flatten all topics for backward compatibility
+const allTopics = folders.flatMap(folder => folder.topics);
+
+export const phase1: Phase = {
+    id: 'phase-1',
+    number: 1,
+    title: 'Python Foundations',
+    description: 'Master Python fundamentals from scratch - variables, data types, control flow, functions, and OOP basics. Build your first CLI application.',
+    duration: '4-6 weeks',
+    skills: ['Python Syntax', 'Variables & Types', 'Control Flow', 'Functions', 'OOP Basics', 'File I/O'],
+    topics: allTopics,
+    folders: folders
+};

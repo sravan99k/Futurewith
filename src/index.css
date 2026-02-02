@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core palette - warm tech aesthetic */
+    --background: 0 0% 98%;
+    --foreground: 220 20% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+
+    /* Python course - warm orange/amber tones */
+    --python: 25 95% 53%;
+    --python-foreground: 0 0% 100%;
+    --python-muted: 30 30% 95%;
+    --python-accent: 35 90% 60%;
+
+    /* Vibe coding - cool teal/cyan tones */
+    --vibe: 175 70% 40%;
+    --vibe-foreground: 0 0% 100%;
+    --vibe-muted: 175 30% 95%;
+    --vibe-accent: 180 65% 50%;
+
+    --primary: 220 20% 15%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 220 10% 92%;
+    --secondary-foreground: 220 20% 15%;
+
+    --muted: 220 10% 95%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 220 10% 90%;
+    --accent-foreground: 220 20% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --success: 145 60% 40%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 220 20% 15%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 220 15% 30%;
+    --sidebar-primary: 220 20% 15%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 220 10% 94%;
+    --sidebar-accent-foreground: 220 20% 15%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 220 50% 50%;
+  }
+
+  .dark {
+    --background: 220 20% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 20% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 20% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --python: 25 90% 55%;
+    --python-foreground: 0 0% 100%;
+    --python-muted: 25 20% 15%;
+    --python-accent: 30 85% 60%;
+
+    --vibe: 175 65% 45%;
+    --vibe-foreground: 0 0% 100%;
+    --vibe-muted: 175 20% 15%;
+    --vibe-accent: 180 60% 55%;
+
+    --primary: 0 0% 95%;
+    --primary-foreground: 220 20% 10%;
+
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 220 15% 18%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 220 15% 18%;
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 0 0% 95%;
+
+    --success: 145 55% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 220 30% 70%;
+
+    --sidebar-background: 220 20% 8%;
+    --sidebar-foreground: 220 10% 80%;
+    --sidebar-primary: 175 60% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 15% 15%;
+    --sidebar-accent-foreground: 220 10% 80%;
+    --sidebar-border: 220 15% 18%;
+    --sidebar-ring: 175 60% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  /* Markdown content styling */
+  .markdown-content {
+    @apply text-foreground;
+  }
+
+  /* List styling fixes */
+  .markdown-content ul,
+  .markdown-content ol {
+    @apply pl-0;
+  }
+
+  .markdown-content li {
+    @apply relative pl-6 leading-relaxed;
+  }
+
+  .markdown-content li::marker {
+    @apply text-foreground/70;
+  }
+
+  /* Code blocks inside lists should align with list text and have reduced margins */
+  .markdown-content li pre,
+  .markdown-content li .code-block-wrapper,
+  .markdown-content li > div[class*="border"][class*="bg-\\[#1e1e1e\\]"] {
+    @apply mt-2 mb-2 ml-0 !important;
+  }
+
+  /* Inline code styling */
+  .markdown-content code:not(pre code) {
+    @apply px-1.5 py-0.5 rounded bg-muted text-sm font-mono text-python;
+  }
+
+  /* Code block styling */
+  .markdown-content pre {
+    @apply bg-foreground/5 rounded-lg overflow-x-auto my-4;
+  }
+
+  .markdown-content pre code {
+    @apply bg-transparent p-0 text-sm font-mono;
+  }
+
+  /* Nested content alignment */
+  .markdown-content li p {
+    @apply mb-2 mt-1;
+  }
+
+  /* Python section styling */
+  .python-section {
+    @apply bg-python-muted;
+  }
+  
+  .python-accent-bg {
+    @apply bg-python text-python-foreground;
+  }
+
+  /* Vibe section styling */
+  .vibe-section {
+    @apply bg-vibe-muted;
+  }
+  
+  .vibe-accent-bg {
+    @apply bg-vibe text-vibe-foreground;
+  }
+
+  /* Smooth transitions */
+  .smooth-transition {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  /* Card hover effects */
+  .card-hover {
+    @apply hover:shadow-lg hover:-translate-y-1 transition-all duration-300;
+  }
+
+  /* Phase card styling */
+  .phase-card {
+    @apply bg-card border border-border rounded-xl p-6 card-hover cursor-pointer;
+  }
+
+  /* Feature item styling */
+  .feature-item {
+    @apply flex items-start gap-3 p-4 rounded-lg bg-background/50 hover:bg-background transition-colors;
+  }
+
+  /* IDE styling */
+  .ide-container {
+    @apply bg-foreground text-background rounded-xl overflow-hidden font-mono text-sm;
+  }
+
+  .ide-header {
+    @apply flex items-center gap-2 px-4 py-3 bg-muted/10 border-b border-border/20;
+  }
+
+  .ide-dot {
+    @apply w-3 h-3 rounded-full;
+  }
+
+  /* Progress bar */
+  .skill-bar {
+    @apply h-2 rounded-full bg-muted overflow-hidden;
+  }
+
+  .skill-fill {
+    @apply h-full rounded-full transition-all duration-500;
+  }
+}

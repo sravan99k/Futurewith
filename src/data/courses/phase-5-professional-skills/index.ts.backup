@@ -1,0 +1,152 @@
+import { Phase, TopicFolder } from '../types';
+
+const folders: TopicFolder[] = [
+    {
+        id: 'folder-5-1',
+        name: '1. Soft Skills',
+        description: 'Emotional intelligence, communication, and teamwork',
+        topics: [
+            {
+                id: '5-1-1',
+                title: 'Soft Skills Theory',
+                description: 'Fundamentals of professional behavior',
+                duration: '3 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-5-professional-skills/01_soft_skills/01_soft_skills_fundamentals_theory.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-5-2',
+        name: '2. Remote Work Mastery',
+        description: 'Tools and strategies for effective remote collaboration',
+        topics: [
+            {
+                id: '5-2-1',
+                title: 'Remote Work Theory',
+                description: 'Best practices for remote productivity',
+                duration: '2 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-5-professional-skills/01_remote_work_mastery/01_remote_work_fundamentals_theory.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-5-3',
+        name: '3. AI Productivity',
+        description: 'Leveraging AI tools to enhance professional workflow',
+        topics: [
+            {
+                id: '5-3-1',
+                title: 'AI Productivity Theory',
+                description: 'Master AI-assisted development and workflows',
+                duration: '4 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-5-professional-skills/02_ai_productivity/01_ai_productivity_fundamentals_theory.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-5-4',
+        name: '4. Business & Entrepreneurship',
+        description: 'Business acumen, startup fundamentals, and innovation',
+        topics: [
+            {
+                id: '5-4-1',
+                title: 'Business Fundamentals',
+                description: 'Understanding market dynamics and business models',
+                duration: '4 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-5-professional-skills/02_business_entrepreneurship/01_business_entrepreneurship_fundamentals_theory.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-5-5',
+        name: '5. Portfolio Building',
+        description: 'Creating a high-impact professional portfolio',
+        topics: [
+            {
+                id: '5-5-1',
+                title: 'Portfolio Strategy',
+                description: 'Design and curate your professional showcase',
+                duration: '5 hours',
+                type: 'project',
+                markdownPath: '/src/data/courses/phase-5-professional-skills/03_portfolio_building/01_portfolio_building_fundamentals_theory.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-5-6',
+        name: '6. Project Management',
+        description: 'Agile, Scrum, and efficient project delivery',
+        topics: [
+            {
+                id: '5-6-1',
+                title: 'Project Management Theory',
+                description: 'Learn modern project management methodologies',
+                duration: '3 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-5-professional-skills/03_project_management/01_project_management_fundamentals_theory.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-5-7',
+        name: '7. Technical Communication',
+        description: 'Writing technical documentation and presenting ideas',
+        topics: [
+            {
+                id: '5-7-1',
+                title: 'Technical Writing',
+                description: 'Communicate complex ideas clearly',
+                duration: '3 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-5-professional-skills/04_technical_communication/01_technical_communication_fundamentals_theory.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-5-8',
+        name: '8. Leadership & Mentoring',
+        description: 'Leading teams and fostering professional growth',
+        topics: [
+            {
+                id: '5-8-1',
+                title: 'Leadership Fundamentals',
+                description: 'Developing leadership skills for tech roles',
+                duration: '4 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-5-professional-skills/05_leadership_mentoring/01_leadership_mentoring_fundamentals_theory.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-5-9',
+        name: '9. Networking Strategies',
+        description: 'Building professional relationships and personal brand',
+        topics: [
+            {
+                id: '5-9-1',
+                title: 'Networking Theory',
+                description: 'Building a lasting professional network',
+                duration: '2 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-5-professional-skills/06_networking_strategies/01_networking_fundamentals_theory.md'
+            }
+        ]
+    }
+];
+
+const allTopics = folders.flatMap(folder => folder.topics);
+
+export const phase5: Phase = {
+    id: 'phase-5',
+    number: 5,
+    title: 'Professional Skills & Career Development',
+    description: 'Master soft skills, remote work, AI productivity, business acumen, portfolio building, project management, and leadership skills for career success.',
+    duration: '4-6 weeks',
+    skills: ['Soft Skills', 'Remote Work', 'AI Productivity', 'Portfolio Building', 'Leadership', 'Project Management'],
+    topics: allTopics,
+    folders: folders
+};

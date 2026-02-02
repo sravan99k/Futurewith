@@ -1,0 +1,62 @@
+import { Phase, TopicFolder } from '../types';
+
+const folders: TopicFolder[] = [
+    {
+        id: 'folder-9-1',
+        name: '1. AI Job Market',
+        description: 'Understanding the landscape of AI employment',
+        topics: [
+            {
+                id: '9-1-1',
+                title: 'Job Market Guide',
+                description: 'Comprehensive guide to AI/ML job market',
+                duration: '4 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-9-career-entrepreneurship/1-ai job market/step1-JOB_MARKET_COMPLETE_GUIDE.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-9-2',
+        name: '2. AI Entrepreneurship',
+        description: 'Starting and scaling AI-driven businesses',
+        topics: [
+            {
+                id: '9-2-1',
+                title: 'Entrepreneurship Guide',
+                description: 'Fundamentals of building an AI startup',
+                duration: '6 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-9-career-entrepreneurship/2-ai entrepreurship/step1-entrepreneurship_COMPLETE_GUIDE.md'
+            }
+        ]
+    },
+    {
+        id: 'folder-9-3',
+        name: '3. Freelancing & Startups',
+        description: 'Navigating freelancing and early-stage ventures',
+        topics: [
+            {
+                id: '9-3-1',
+                title: 'Freelancing Roadmap',
+                description: 'Build your career as an AI freelancer',
+                duration: '5 hours',
+                type: 'theory',
+                markdownPath: '/src/data/courses/phase-9-career-entrepreneurship/3-freelancing startups/step1-freelancing_roadmap_theory.md'
+            }
+        ]
+    }
+];
+
+const allTopics = folders.flatMap(folder => folder.topics);
+
+export const phase9: Phase = {
+    id: 'phase-9',
+    number: 9,
+    title: 'Career Launch & Entrepreneurship',
+    description: 'Navigate the AI job market, launch your career, explore entrepreneurship opportunities, freelancing, and build sustainable income streams.',
+    duration: '4-6 weeks',
+    skills: ['Job Search', 'Entrepreneurship', 'Freelancing', 'Startups', 'Career Growth', 'Salary Negotiation'],
+    topics: allTopics,
+    folders: folders
+};

@@ -1,0 +1,1692 @@
+import { Phase, TopicFolder } from '../types';
+
+const folders: TopicFolder[] = [
+  {
+    "id": "folder-4-00_portfolio_projects",
+    "name": "00_portfolio_projects",
+    "description": "Topics for 00_portfolio_projects",
+    "topics": [
+      {
+        "id": "4-00_portfolio_projects-0",
+        "title": "Ai Portfolio Practice Questions",
+        "description": "Learning about ai_portfolio_practice_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_portfolio_projects/ai_portfolio_practice_questions.md"
+      },
+      {
+        "id": "4-00_portfolio_projects-1",
+        "title": "Ai Project Portfolio Real World Applications Practice Questions",
+        "description": "Learning about ai_project_portfolio_real_world_applications_practice_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_portfolio_projects/ai_project_portfolio_real_world_applications_practice_questions.md"
+      },
+      {
+        "id": "4-00_portfolio_projects-2",
+        "title": "Ai Project Portfolio Real World Applications Simple Guide",
+        "description": "Learning about ai_project_portfolio_real_world_applications_simple_guide",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_portfolio_projects/ai_project_portfolio_real_world_applications_simple_guide.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-00_system_documentation",
+    "name": "00_system_documentation",
+    "description": "Topics for 00_system_documentation",
+    "topics": [
+      {
+        "id": "4-00_system_documentation-0",
+        "title": "ACHIEVEMENT SYSTEM",
+        "description": "Learning about 00_ACHIEVEMENT_SYSTEM",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/00_ACHIEVEMENT_SYSTEM.md"
+      },
+      {
+        "id": "4-00_system_documentation-1",
+        "title": "AI ML COMPLETE VERIFICATION",
+        "description": "Learning about 00_AI_ML_COMPLETE_VERIFICATION",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/00_AI_ML_COMPLETE_VERIFICATION.md"
+      },
+      {
+        "id": "4-00_system_documentation-2",
+        "title": "AI ML FILE COMPARISON",
+        "description": "Learning about 00_AI_ML_FILE_COMPARISON",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/00_AI_ML_FILE_COMPARISON.md"
+      },
+      {
+        "id": "4-00_system_documentation-3",
+        "title": "AI PYTHON GLOSSARY",
+        "description": "Learning about 00_AI_PYTHON_GLOSSARY",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/00_AI_PYTHON_GLOSSARY.md"
+      },
+      {
+        "id": "4-00_system_documentation-4",
+        "title": "COMMUNITY NETWORKING GUIDE",
+        "description": "Learning about 00_COMMUNITY_NETWORKING_GUIDE",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/00_COMMUNITY_NETWORKING_GUIDE.md"
+      },
+      {
+        "id": "4-00_system_documentation-5",
+        "title": "COMPLETE CHEAT SHEET COLLECTION",
+        "description": "Learning about 00_COMPLETE_CHEAT_SHEET_COLLECTION",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/00_COMPLETE_CHEAT_SHEET_COLLECTION.md"
+      },
+      {
+        "id": "4-00_system_documentation-6",
+        "title": "COMPREHENSIVE SKILLS ASSESSMENT",
+        "description": "Learning about 00_COMPREHENSIVE_SKILLS_ASSESSMENT",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/00_COMPREHENSIVE_SKILLS_ASSESSMENT.md"
+      },
+      {
+        "id": "4-00_system_documentation-7",
+        "title": "CROSS PHASE CAPSTONE PROJECTS",
+        "description": "Learning about 00_CROSS_PHASE_CAPSTONE_PROJECTS",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/00_CROSS_PHASE_CAPSTONE_PROJECTS.md"
+      },
+      {
+        "id": "4-00_system_documentation-8",
+        "title": "CROSS PHASE SKILLS MATRIX",
+        "description": "Learning about 00_CROSS_PHASE_SKILLS_MATRIX",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/00_CROSS_PHASE_SKILLS_MATRIX.md"
+      },
+      {
+        "id": "4-00_system_documentation-9",
+        "title": "CURRENT COVERAGE VERIFICATION",
+        "description": "Learning about 00_CURRENT_COVERAGE_VERIFICATION",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/00_CURRENT_COVERAGE_VERIFICATION.md"
+      },
+      {
+        "id": "4-00_system_documentation-10",
+        "title": "EXACT FILE STRUCTURE",
+        "description": "Learning about 00_EXACT_FILE_STRUCTURE",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/00_EXACT_FILE_STRUCTURE.md"
+      },
+      {
+        "id": "4-00_system_documentation-11",
+        "title": "FINAL ENHANCEMENT REPORT",
+        "description": "Learning about 00_FINAL_ENHANCEMENT_REPORT",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/00_FINAL_ENHANCEMENT_REPORT.md"
+      },
+      {
+        "id": "4-00_system_documentation-12",
+        "title": "INDUSTRY CASE STUDIES",
+        "description": "Learning about 00_INDUSTRY_CASE_STUDIES",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/00_INDUSTRY_CASE_STUDIES.md"
+      },
+      {
+        "id": "4-00_system_documentation-13",
+        "title": "JOB MARKET ANALYSIS",
+        "description": "Learning about 00_JOB_MARKET_ANALYSIS",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/00_JOB_MARKET_ANALYSIS.md"
+      },
+      {
+        "id": "4-00_system_documentation-14",
+        "title": "LEARNING ANALYTICS DASHBOARD",
+        "description": "Learning about 00_LEARNING_ANALYTICS_DASHBOARD",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/00_LEARNING_ANALYTICS_DASHBOARD.md"
+      },
+      {
+        "id": "4-00_system_documentation-15",
+        "title": "LEARNING PATH INTEGRATOR",
+        "description": "Learning about 00_LEARNING_PATH_INTEGRATOR",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/00_LEARNING_PATH_INTEGRATOR.md"
+      },
+      {
+        "id": "4-00_system_documentation-16",
+        "title": "MASTER LEARNING SEQUENCE",
+        "description": "Learning about 00_MASTER_LEARNING_SEQUENCE",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/00_MASTER_LEARNING_SEQUENCE.md"
+      },
+      {
+        "id": "4-00_system_documentation-17",
+        "title": "MISSION COMPLETE SUMMARY",
+        "description": "Learning about 00_MISSION_COMPLETE_SUMMARY",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/00_MISSION_COMPLETE_SUMMARY.md"
+      },
+      {
+        "id": "4-00_system_documentation-18",
+        "title": "PORTFOLIO INTEGRATION GUIDE",
+        "description": "Learning about 00_PORTFOLIO_INTEGRATION_GUIDE",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/00_PORTFOLIO_INTEGRATION_GUIDE.md"
+      },
+      {
+        "id": "4-00_system_documentation-19",
+        "title": "PROFESSIONAL DEVELOPMENT ROADMAP",
+        "description": "Learning about 00_PROFESSIONAL_DEVELOPMENT_ROADMAP",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/00_PROFESSIONAL_DEVELOPMENT_ROADMAP.md"
+      },
+      {
+        "id": "4-00_system_documentation-20",
+        "title": "PROGRESS TRACKING TEMPLATES",
+        "description": "Learning about 00_PROGRESS_TRACKING_TEMPLATES",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/00_PROGRESS_TRACKING_TEMPLATES.md"
+      },
+      {
+        "id": "4-00_system_documentation-21",
+        "title": "SYSTEM SUMMARY",
+        "description": "Learning about 00_SYSTEM_SUMMARY",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/00_SYSTEM_SUMMARY.md"
+      },
+      {
+        "id": "4-00_system_documentation-22",
+        "title": "FINAL ACHIEVEMENT REPORT",
+        "description": "Learning about FINAL_ACHIEVEMENT_REPORT",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/FINAL_ACHIEVEMENT_REPORT.md"
+      },
+      {
+        "id": "4-00_system_documentation-23",
+        "title": "Enhancement Summary",
+        "description": "Learning about enhancement_summary",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/enhancement_summary.md"
+      },
+      {
+        "id": "4-00_system_documentation-24",
+        "title": "Universal Ai Guides Batch2 Enhancement Summary",
+        "description": "Learning about universal_ai_guides_batch2_enhancement_summary",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/00_system_documentation/universal_ai_guides_batch2_enhancement_summary.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-08_deep_learning_neural_networks",
+    "name": "08_deep_learning_neural_networks",
+    "description": "Topics for 08_deep_learning_neural_networks",
+    "topics": [
+      {
+        "id": "4-08_deep_learning_neural_networks-3",
+        "title": "Deep Learning Theory",
+        "description": "Learning about 20_deep_learning_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/08_deep_learning_neural_networks/20_deep_learning_theory.md"
+      },
+      {
+        "id": "4-08_deep_learning_neural_networks-2",
+        "title": "Deep Learning Practice",
+        "description": "Learning about 20_deep_learning_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/08_deep_learning_neural_networks/20_deep_learning_practice.md"
+      },
+      {
+        "id": "4-08_deep_learning_neural_networks-1",
+        "title": "Deep Learning Cheatsheet",
+        "description": "Learning about 20_deep_learning_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/08_deep_learning_neural_networks/20_deep_learning_cheatsheet.md"
+      },
+      {
+        "id": "4-08_deep_learning_neural_networks-0",
+        "title": "Deep Learning Interview Questions",
+        "description": "Learning about 08_deep_learning_interview_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/08_deep_learning_neural_networks/08_deep_learning_interview_questions.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-1-ai-ml-fundamentals",
+    "name": "Ai Ml Fundamentals",
+    "description": "Topics for 1-ai-ml-fundamentals",
+    "topics": [
+      {
+        "id": "4-1-0",
+        "title": "Step1-ai Ml Fundamentals Theory",
+        "description": "Learning about step1-ai_ml_fundamentals_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/1-ai-ml-fundamentals/step1-ai_ml_fundamentals_theory.md"
+      },
+      {
+        "id": "4-1-1",
+        "title": "Step2-ai Ml Fundamentals Simple Guide",
+        "description": "Learning about step2-ai_ml_fundamentals_simple_guide",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/1-ai-ml-fundamentals/step2-ai_ml_fundamentals_simple_guide.md"
+      },
+      {
+        "id": "4-1-2",
+        "title": "Step3-ai Ml Fundamentals Practice",
+        "description": "Learning about step3-ai_ml_fundamentals_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/1-ai-ml-fundamentals/step3-ai_ml_fundamentals_practice.md"
+      },
+      {
+        "id": "4-1-3",
+        "title": "Step4-ai Ml Fundamentals Practice Questions",
+        "description": "Learning about step4-ai_ml_fundamentals_practice_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/1-ai-ml-fundamentals/step4-ai_ml_fundamentals_practice_questions.md"
+      },
+      {
+        "id": "4-1-4",
+        "title": "Step5-ai Fundamentals Practice Questions",
+        "description": "Learning about step5-ai_fundamentals_practice_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/1-ai-ml-fundamentals/step5-ai_fundamentals_practice_questions.md"
+      },
+      {
+        "id": "4-1-5",
+        "title": "Step6-ai Ml Fundamentals Interview Questions",
+        "description": "Learning about step6-ai_ml_fundamentals_interview_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/1-ai-ml-fundamentals/step6-ai_ml_fundamentals_interview_questions.md"
+      },
+      {
+        "id": "4-1-6",
+        "title": "Step7-ai Ml Fundamentals Cheatsheet",
+        "description": "Learning about step7-ai_ml_fundamentals_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/1-ai-ml-fundamentals/step7-ai_ml_fundamentals_cheatsheet.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-10_advanced_nlp_llm",
+    "name": "10_advanced_nlp_llm",
+    "description": "Topics for 10_advanced_nlp_llm",
+    "topics": [
+      {
+        "id": "4-10_advanced_nlp_llm-3",
+        "title": "Nlp Theory",
+        "description": "Learning about 10_nlp_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/10_advanced_nlp_llm/10_nlp_theory.md"
+      },
+      {
+        "id": "4-10_advanced_nlp_llm-5",
+        "title": "Natural Language Processing Text Analysis Simple Guide",
+        "description": "Learning about natural_language_processing_text_analysis_simple_guide",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/10_advanced_nlp_llm/natural_language_processing_text_analysis_simple_guide.md"
+      },
+      {
+        "id": "4-10_advanced_nlp_llm-2",
+        "title": "Nlp Practice",
+        "description": "Learning about 10_nlp_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/10_advanced_nlp_llm/10_nlp_practice.md"
+      },
+      {
+        "id": "4-10_advanced_nlp_llm-4",
+        "title": "Natural Language Processing Text Analysis Practice Questions",
+        "description": "Learning about natural_language_processing_text_analysis_practice_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/10_advanced_nlp_llm/natural_language_processing_text_analysis_practice_questions.md"
+      },
+      {
+        "id": "4-10_advanced_nlp_llm-0",
+        "title": "Nlp Cheatsheet",
+        "description": "Learning about 10_nlp_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/10_advanced_nlp_llm/10_nlp_cheatsheet.md"
+      },
+      {
+        "id": "4-10_advanced_nlp_llm-1",
+        "title": "Nlp Interview Questions",
+        "description": "Learning about 10_nlp_interview_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/10_advanced_nlp_llm/10_nlp_interview_questions.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-11_ai_ml_advanced",
+    "name": "11_ai_ml_advanced",
+    "description": "Topics for 11_ai_ml_advanced",
+    "topics": [
+      {
+        "id": "4-11_ai_ml_advanced-2",
+        "title": "Hardware Infrastructure Theory",
+        "description": "Learning about 14_hardware_infrastructure_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/11_ai_ml_advanced/14_hardware_infrastructure_theory.md"
+      },
+      {
+        "id": "4-11_ai_ml_advanced-9",
+        "title": "Ai Hardware Infrastructure Simple Guide",
+        "description": "Learning about ai_hardware_infrastructure_simple_guide",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/11_ai_ml_advanced/ai_hardware_infrastructure_simple_guide.md"
+      },
+      {
+        "id": "4-11_ai_ml_advanced-1",
+        "title": "Hardware Infrastructure Practice",
+        "description": "Learning about 14_hardware_infrastructure_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/11_ai_ml_advanced/14_hardware_infrastructure_practice.md"
+      },
+      {
+        "id": "4-11_ai_ml_advanced-8",
+        "title": "Ai Hardware Infrastructure Practice Questions",
+        "description": "Learning about ai_hardware_infrastructure_practice_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/11_ai_ml_advanced/ai_hardware_infrastructure_practice_questions.md"
+      },
+      {
+        "id": "4-11_ai_ml_advanced-4",
+        "title": "Real World Applications Theory",
+        "description": "Learning about 15_real_world_applications_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/11_ai_ml_advanced/15_real_world_applications_theory.md"
+      },
+      {
+        "id": "4-11_ai_ml_advanced-3",
+        "title": "Real World Applications Practice",
+        "description": "Learning about 15_real_world_applications_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/11_ai_ml_advanced/15_real_world_applications_practice.md"
+      },
+      {
+        "id": "4-11_ai_ml_advanced-6",
+        "title": "Ethics Responsibility Theory",
+        "description": "Learning about 16_ethics_responsibility_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/11_ai_ml_advanced/16_ethics_responsibility_theory.md"
+      },
+      {
+        "id": "4-11_ai_ml_advanced-7",
+        "title": "Ai Ethics Fairness Responsibility Simple Guide",
+        "description": "Learning about ai_ethics_fairness_responsibility_simple_guide",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/11_ai_ml_advanced/ai_ethics_fairness_responsibility_simple_guide.md"
+      },
+      {
+        "id": "4-11_ai_ml_advanced-5",
+        "title": "Ai Ml Advanced Cheatsheet",
+        "description": "Learning about 16_ai_ml_advanced_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/11_ai_ml_advanced/16_ai_ml_advanced_cheatsheet.md"
+      },
+      {
+        "id": "4-11_ai_ml_advanced-0",
+        "title": "Ai Ml Advanced Interview Questions",
+        "description": "Learning about 06_ai_ml_advanced_interview_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/11_ai_ml_advanced/06_ai_ml_advanced_interview_questions.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-11_reinforcement_learning",
+    "name": "11_reinforcement_learning",
+    "description": "Topics for 11_reinforcement_learning",
+    "topics": [
+      {
+        "id": "4-11_reinforcement_learning-3",
+        "title": "Reinforcement Learning Theory",
+        "description": "Learning about 11_reinforcement_learning_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/11_reinforcement_learning/11_reinforcement_learning_theory.md"
+      },
+      {
+        "id": "4-11_reinforcement_learning-5",
+        "title": "Reinforcement Learning Decision Making Simple Guide",
+        "description": "Learning about reinforcement_learning_decision_making_simple_guide",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/11_reinforcement_learning/reinforcement_learning_decision_making_simple_guide.md"
+      },
+      {
+        "id": "4-11_reinforcement_learning-2",
+        "title": "Reinforcement Learning Practice",
+        "description": "Learning about 11_reinforcement_learning_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/11_reinforcement_learning/11_reinforcement_learning_practice.md"
+      },
+      {
+        "id": "4-11_reinforcement_learning-4",
+        "title": "Reinforcement Learning Decision Making Practice Questions",
+        "description": "Learning about reinforcement_learning_decision_making_practice_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/11_reinforcement_learning/reinforcement_learning_decision_making_practice_questions.md"
+      },
+      {
+        "id": "4-11_reinforcement_learning-0",
+        "title": "Reinforcement Learning Cheatsheet",
+        "description": "Learning about 11_reinforcement_learning_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/11_reinforcement_learning/11_reinforcement_learning_cheatsheet.md"
+      },
+      {
+        "id": "4-11_reinforcement_learning-1",
+        "title": "Reinforcement Learning Interview Questions",
+        "description": "Learning about 11_reinforcement_learning_interview_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/11_reinforcement_learning/11_reinforcement_learning_interview_questions.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-12_deep_learning",
+    "name": "12_deep_learning",
+    "description": "Topics for 12_deep_learning",
+    "topics": [
+      {
+        "id": "4-12_deep_learning-3",
+        "title": "Deep Learning Basic Theory",
+        "description": "Learning about 20_deep_learning_basic_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/12_deep_learning/20_deep_learning_basic_theory.md"
+      },
+      {
+        "id": "4-12_deep_learning-4",
+        "title": "Deep Learning Neural Networks Simple Guide",
+        "description": "Learning about deep_learning_neural_networks_simple_guide",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/12_deep_learning/deep_learning_neural_networks_simple_guide.md"
+      },
+      {
+        "id": "4-12_deep_learning-2",
+        "title": "Deep Learning Basic Practice",
+        "description": "Learning about 20_deep_learning_basic_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/12_deep_learning/20_deep_learning_basic_practice.md"
+      },
+      {
+        "id": "4-12_deep_learning-5",
+        "title": "Deep Learning Practice Questions",
+        "description": "Learning about deep_learning_practice_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/12_deep_learning/deep_learning_practice_questions.md"
+      },
+      {
+        "id": "4-12_deep_learning-1",
+        "title": "Deep Learning Basic Cheatsheet",
+        "description": "Learning about 20_deep_learning_basic_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/12_deep_learning/20_deep_learning_basic_cheatsheet.md"
+      },
+      {
+        "id": "4-12_deep_learning-0",
+        "title": "Deep Learning Interview Questions",
+        "description": "Learning about 06_deep_learning_interview_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/12_deep_learning/06_deep_learning_interview_questions.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-12_generative_ai_creative_models",
+    "name": "12_generative_ai_creative_models",
+    "description": "Topics for 12_generative_ai_creative_models",
+    "topics": [
+      {
+        "id": "4-12_generative_ai_creative_models-3",
+        "title": "Generative Ai Theory",
+        "description": "Learning about 24_generative_ai_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/12_generative_ai_creative_models/24_generative_ai_theory.md"
+      },
+      {
+        "id": "4-12_generative_ai_creative_models-5",
+        "title": "Generative Ai Creative Models Simple Guide",
+        "description": "Learning about generative_ai_creative_models_simple_guide",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/12_generative_ai_creative_models/generative_ai_creative_models_simple_guide.md"
+      },
+      {
+        "id": "4-12_generative_ai_creative_models-2",
+        "title": "Generative Ai Practice",
+        "description": "Learning about 24_generative_ai_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/12_generative_ai_creative_models/24_generative_ai_practice.md"
+      },
+      {
+        "id": "4-12_generative_ai_creative_models-4",
+        "title": "Generative Ai Creative Models Practice Questions",
+        "description": "Learning about generative_ai_creative_models_practice_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/12_generative_ai_creative_models/generative_ai_creative_models_practice_questions.md"
+      },
+      {
+        "id": "4-12_generative_ai_creative_models-1",
+        "title": "Generative Ai Cheatsheet",
+        "description": "Learning about 24_generative_ai_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/12_generative_ai_creative_models/24_generative_ai_cheatsheet.md"
+      },
+      {
+        "id": "4-12_generative_ai_creative_models-0",
+        "title": "Generative Ai Interview Questions",
+        "description": "Learning about 12_generative_ai_interview_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/12_generative_ai_creative_models/12_generative_ai_interview_questions.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-13_deep_learning_advanced",
+    "name": "13_deep_learning_advanced",
+    "description": "Topics for 13_deep_learning_advanced",
+    "topics": [
+      {
+        "id": "4-13_deep_learning_advanced-3",
+        "title": "Deep Learning Advanced Theory",
+        "description": "Learning about 20_deep_learning_advanced_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/13_deep_learning_advanced/20_deep_learning_advanced_theory.md"
+      },
+      {
+        "id": "4-13_deep_learning_advanced-2",
+        "title": "Deep Learning Advanced Practice",
+        "description": "Learning about 20_deep_learning_advanced_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/13_deep_learning_advanced/20_deep_learning_advanced_practice.md"
+      },
+      {
+        "id": "4-13_deep_learning_advanced-1",
+        "title": "Deep Learning Advanced Cheatsheet",
+        "description": "Learning about 20_deep_learning_advanced_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/13_deep_learning_advanced/20_deep_learning_advanced_cheatsheet.md"
+      },
+      {
+        "id": "4-13_deep_learning_advanced-0",
+        "title": "Deep Learning Advanced Interview Questions",
+        "description": "Learning about 06_deep_learning_advanced_interview_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/13_deep_learning_advanced/06_deep_learning_advanced_interview_questions.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-13_model_selection_data_science_pipeline",
+    "name": "13_model_selection_data_science_pipeline",
+    "description": "Topics for 13_model_selection_data_science_pipeline",
+    "topics": [
+      {
+        "id": "4-13_model_selection_data_science_pipeline-3",
+        "title": "Model Selection Theory",
+        "description": "Learning about 25_model_selection_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/13_model_selection_data_science_pipeline/25_model_selection_theory.md"
+      },
+      {
+        "id": "4-13_model_selection_data_science_pipeline-5",
+        "title": "Model Selection Data Science Pipeline Simple Guide",
+        "description": "Learning about model_selection_data_science_pipeline_simple_guide",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/13_model_selection_data_science_pipeline/model_selection_data_science_pipeline_simple_guide.md"
+      },
+      {
+        "id": "4-13_model_selection_data_science_pipeline-2",
+        "title": "Model Selection Practice",
+        "description": "Learning about 25_model_selection_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/13_model_selection_data_science_pipeline/25_model_selection_practice.md"
+      },
+      {
+        "id": "4-13_model_selection_data_science_pipeline-4",
+        "title": "Model Selection Data Science Pipeline Practice Questions",
+        "description": "Learning about model_selection_data_science_pipeline_practice_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/13_model_selection_data_science_pipeline/model_selection_data_science_pipeline_practice_questions.md"
+      },
+      {
+        "id": "4-13_model_selection_data_science_pipeline-1",
+        "title": "Model Selection Cheatsheet",
+        "description": "Learning about 25_model_selection_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/13_model_selection_data_science_pipeline/25_model_selection_cheatsheet.md"
+      },
+      {
+        "id": "4-13_model_selection_data_science_pipeline-0",
+        "title": "Model Selection Interview Questions",
+        "description": "Learning about 13_model_selection_interview_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/13_model_selection_data_science_pipeline/13_model_selection_interview_questions.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-14_distributed_training",
+    "name": "14_distributed_training",
+    "description": "Topics for 14_distributed_training",
+    "topics": [
+      {
+        "id": "4-14_distributed_training-4",
+        "title": "Neural Networks Architecture",
+        "description": "Learning about 20_neural_networks_architecture",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/14_distributed_training/20_neural_networks_architecture.md"
+      },
+      {
+        "id": "4-14_distributed_training-3",
+        "title": "Advanced Neural Networks Theory",
+        "description": "Learning about 20_advanced_neural_networks_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/14_distributed_training/20_advanced_neural_networks_theory.md"
+      },
+      {
+        "id": "4-14_distributed_training-6",
+        "title": "Advanced Ai Topics Specialized Areas Simple Guide",
+        "description": "Learning about advanced_ai_topics_specialized_areas_simple_guide",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/14_distributed_training/advanced_ai_topics_specialized_areas_simple_guide.md"
+      },
+      {
+        "id": "4-14_distributed_training-2",
+        "title": "Advanced Neural Networks Practice",
+        "description": "Learning about 20_advanced_neural_networks_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/14_distributed_training/20_advanced_neural_networks_practice.md"
+      },
+      {
+        "id": "4-14_distributed_training-5",
+        "title": "Advanced Ai Topics Specialized Areas Practice Questions",
+        "description": "Learning about advanced_ai_topics_specialized_areas_practice_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/14_distributed_training/advanced_ai_topics_specialized_areas_practice_questions.md"
+      },
+      {
+        "id": "4-14_distributed_training-1",
+        "title": "Advanced Neural Networks Cheatsheet",
+        "description": "Learning about 20_advanced_neural_networks_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/14_distributed_training/20_advanced_neural_networks_cheatsheet.md"
+      },
+      {
+        "id": "4-14_distributed_training-0",
+        "title": "Advanced Ai Interview Questions",
+        "description": "Learning about 06_advanced_ai_interview_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/14_distributed_training/06_advanced_ai_interview_questions.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-14_model_deployment_production",
+    "name": "14_model_deployment_production",
+    "description": "Topics for 14_model_deployment_production",
+    "topics": [
+      {
+        "id": "4-14_model_deployment_production-3",
+        "title": "Deployment Theory",
+        "description": "Learning about 26_deployment_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/14_model_deployment_production/26_deployment_theory.md"
+      },
+      {
+        "id": "4-14_model_deployment_production-5",
+        "title": "Model Deployment Production Systems Simple Guide",
+        "description": "Learning about model_deployment_production_systems_simple_guide",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/14_model_deployment_production/model_deployment_production_systems_simple_guide.md"
+      },
+      {
+        "id": "4-14_model_deployment_production-2",
+        "title": "Deployment Practice",
+        "description": "Learning about 26_deployment_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/14_model_deployment_production/26_deployment_practice.md"
+      },
+      {
+        "id": "4-14_model_deployment_production-4",
+        "title": "Model Deployment Production Systems Practice Questions",
+        "description": "Learning about model_deployment_production_systems_practice_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/14_model_deployment_production/model_deployment_production_systems_practice_questions.md"
+      },
+      {
+        "id": "4-14_model_deployment_production-1",
+        "title": "Deployment Cheatsheet",
+        "description": "Learning about 26_deployment_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/14_model_deployment_production/26_deployment_cheatsheet.md"
+      },
+      {
+        "id": "4-14_model_deployment_production-0",
+        "title": "Model Deployment Interview Questions",
+        "description": "Learning about 14_model_deployment_interview_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/14_model_deployment_production/14_model_deployment_interview_questions.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-15_advanced_ai_specialized",
+    "name": "15_advanced_ai_specialized",
+    "description": "Topics for 15_advanced_ai_specialized",
+    "topics": [
+      {
+        "id": "4-15_advanced_ai_specialized-3",
+        "title": "Advanced Topics Theory",
+        "description": "Learning about 27_advanced_topics_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/15_advanced_ai_specialized/27_advanced_topics_theory.md"
+      },
+      {
+        "id": "4-15_advanced_ai_specialized-2",
+        "title": "Advanced Topics Practice",
+        "description": "Learning about 27_advanced_topics_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/15_advanced_ai_specialized/27_advanced_topics_practice.md"
+      },
+      {
+        "id": "4-15_advanced_ai_specialized-1",
+        "title": "Advanced Topics Cheatsheet",
+        "description": "Learning about 27_advanced_topics_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/15_advanced_ai_specialized/27_advanced_topics_cheatsheet.md"
+      },
+      {
+        "id": "4-15_advanced_ai_specialized-0",
+        "title": "Advanced Ai Interview Questions",
+        "description": "Learning about 15_advanced_ai_interview_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/15_advanced_ai_specialized/15_advanced_ai_interview_questions.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-15_modern_transformers_vision",
+    "name": "15_modern_transformers_vision",
+    "description": "Topics for 15_modern_transformers_vision",
+    "topics": [
+      {
+        "id": "4-15_modern_transformers_vision-0",
+        "title": "Vision Transformers Theory",
+        "description": "Learning about 01_vision_transformers_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/15_modern_transformers_vision/01_vision_transformers_theory.md"
+      },
+      {
+        "id": "4-15_modern_transformers_vision-7",
+        "title": "Computer Vision Theory",
+        "description": "Learning about 21_computer_vision_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/15_modern_transformers_vision/21_computer_vision_theory.md"
+      },
+      {
+        "id": "4-15_modern_transformers_vision-9",
+        "title": "Computer Vision Image Processing Simple Guide",
+        "description": "Learning about computer_vision_image_processing_simple_guide",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/15_modern_transformers_vision/computer_vision_image_processing_simple_guide.md"
+      },
+      {
+        "id": "4-15_modern_transformers_vision-1",
+        "title": "Transformer Practice",
+        "description": "Learning about 02_transformer_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/15_modern_transformers_vision/02_transformer_practice.md"
+      },
+      {
+        "id": "4-15_modern_transformers_vision-6",
+        "title": "Computer Vision Practice",
+        "description": "Learning about 21_computer_vision_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/15_modern_transformers_vision/21_computer_vision_practice.md"
+      },
+      {
+        "id": "4-15_modern_transformers_vision-8",
+        "title": "Computer Vision Image Processing Practice Questions",
+        "description": "Learning about computer_vision_image_processing_practice_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/15_modern_transformers_vision/computer_vision_image_processing_practice_questions.md"
+      },
+      {
+        "id": "4-15_modern_transformers_vision-2",
+        "title": "Vision Cheatsheet",
+        "description": "Learning about 03_vision_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/15_modern_transformers_vision/03_vision_cheatsheet.md"
+      },
+      {
+        "id": "4-15_modern_transformers_vision-5",
+        "title": "Computer Vision Cheatsheet",
+        "description": "Learning about 21_computer_vision_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/15_modern_transformers_vision/21_computer_vision_cheatsheet.md"
+      },
+      {
+        "id": "4-15_modern_transformers_vision-3",
+        "title": "Vision Interview Prep",
+        "description": "Learning about 04_vision_interview_prep",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/15_modern_transformers_vision/04_vision_interview_prep.md"
+      },
+      {
+        "id": "4-15_modern_transformers_vision-4",
+        "title": "Computer Vision Interview Questions",
+        "description": "Learning about 09_computer_vision_interview_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/15_modern_transformers_vision/09_computer_vision_interview_questions.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-16_time_series_forecasting",
+    "name": "16_time_series_forecasting",
+    "description": "Topics for 16_time_series_forecasting",
+    "topics": [
+      {
+        "id": "4-16_time_series_forecasting-0",
+        "title": "Time Series Fundamentals Theory",
+        "description": "Learning about 01_time_series_fundamentals_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/16_time_series_forecasting/01_time_series_fundamentals_theory.md"
+      },
+      {
+        "id": "4-16_time_series_forecasting-1",
+        "title": "Time Series Practice Exercises",
+        "description": "Learning about 02_time_series_practice_exercises",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/16_time_series_forecasting/02_time_series_practice_exercises.md"
+      },
+      {
+        "id": "4-16_time_series_forecasting-2",
+        "title": "Time Series Cheatsheet",
+        "description": "Learning about 03_time_series_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/16_time_series_forecasting/03_time_series_cheatsheet.md"
+      },
+      {
+        "id": "4-16_time_series_forecasting-3",
+        "title": "Time Series Projects",
+        "description": "Learning about 03_time_series_projects",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/16_time_series_forecasting/03_time_series_projects.md"
+      },
+      {
+        "id": "4-16_time_series_forecasting-4",
+        "title": "Time Series Cheatsheet",
+        "description": "Learning about 04_time_series_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/16_time_series_forecasting/04_time_series_cheatsheet.md"
+      },
+      {
+        "id": "4-16_time_series_forecasting-5",
+        "title": "Time Series Interview Prep",
+        "description": "Learning about 04_time_series_interview_prep",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/16_time_series_forecasting/04_time_series_interview_prep.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-17_graph_machine_learning",
+    "name": "17_graph_machine_learning",
+    "description": "Topics for 17_graph_machine_learning",
+    "topics": [
+      {
+        "id": "4-17_graph_machine_learning-0",
+        "title": "Graph Ml Fundamentals Theory",
+        "description": "Learning about 01_graph_ml_fundamentals_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/17_graph_machine_learning/01_graph_ml_fundamentals_theory.md"
+      },
+      {
+        "id": "4-17_graph_machine_learning-1",
+        "title": "Graph Ml Practice Exercises",
+        "description": "Learning about 02_graph_ml_practice_exercises",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/17_graph_machine_learning/02_graph_ml_practice_exercises.md"
+      },
+      {
+        "id": "4-17_graph_machine_learning-2",
+        "title": "Graph Ml Cheatsheet",
+        "description": "Learning about 03_graph_ml_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/17_graph_machine_learning/03_graph_ml_cheatsheet.md"
+      },
+      {
+        "id": "4-17_graph_machine_learning-3",
+        "title": "Graph Ml Interview Prep",
+        "description": "Learning about 04_graph_ml_interview_prep",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/17_graph_machine_learning/04_graph_ml_interview_prep.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-18_ai_agents_rag_llm_engineering",
+    "name": "18_ai_agents_rag_llm_engineering",
+    "description": "Topics for 18_ai_agents_rag_llm_engineering",
+    "topics": [
+      {
+        "id": "4-18_ai_agents_rag_llm_engineering-0",
+        "title": "Ai Agents Fundamentals Theory",
+        "description": "Learning about 01_ai_agents_fundamentals_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/18_ai_agents_rag_llm_engineering/01_ai_agents_fundamentals_theory.md"
+      },
+      {
+        "id": "4-18_ai_agents_rag_llm_engineering-1",
+        "title": "Rag Systems Practice",
+        "description": "Learning about 02_rag_systems_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/18_ai_agents_rag_llm_engineering/02_rag_systems_practice.md"
+      },
+      {
+        "id": "4-18_ai_agents_rag_llm_engineering-2",
+        "title": "Llm Engineering Cheatsheet",
+        "description": "Learning about 03_llm_engineering_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/18_ai_agents_rag_llm_engineering/03_llm_engineering_cheatsheet.md"
+      },
+      {
+        "id": "4-18_ai_agents_rag_llm_engineering-3",
+        "title": "Ai Agents Interview Prep",
+        "description": "Learning about 04_ai_agents_interview_prep",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/18_ai_agents_rag_llm_engineering/04_ai_agents_interview_prep.md"
+      },
+      {
+        "id": "4-18_ai_agents_rag_llm_engineering-4",
+        "title": "Vector Databases Comparison",
+        "description": "Learning about 05_vector_databases_comparison",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/18_ai_agents_rag_llm_engineering/05_vector_databases_comparison.md"
+      },
+      {
+        "id": "4-18_ai_agents_rag_llm_engineering-5",
+        "title": "Llm Finetuning Qlora",
+        "description": "Learning about 06_llm_finetuning_qlora",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/18_ai_agents_rag_llm_engineering/06_llm_finetuning_qlora.md"
+      },
+      {
+        "id": "4-18_ai_agents_rag_llm_engineering-6",
+        "title": "Llm Safety Alignment",
+        "description": "Learning about 07_llm_safety_alignment",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/18_ai_agents_rag_llm_engineering/07_llm_safety_alignment.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-19_assessment_interview_preparation",
+    "name": "19_assessment_interview_preparation",
+    "description": "Topics for 19_assessment_interview_preparation",
+    "topics": [
+      {
+        "id": "4-19_assessment_interview_preparation-2",
+        "title": "Assessment Preparation Theory",
+        "description": "Learning about 17_assessment_preparation_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/19_assessment_interview_preparation/17_assessment_preparation_theory.md"
+      },
+      {
+        "id": "4-19_assessment_interview_preparation-7",
+        "title": "Ai Assessment Interview Preparation Simple Guide",
+        "description": "Learning about ai_assessment_interview_preparation_simple_guide",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/19_assessment_interview_preparation/ai_assessment_interview_preparation_simple_guide.md"
+      },
+      {
+        "id": "4-19_assessment_interview_preparation-1",
+        "title": "Assessment Preparation Practice",
+        "description": "Learning about 17_assessment_preparation_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/19_assessment_interview_preparation/17_assessment_preparation_practice.md"
+      },
+      {
+        "id": "4-19_assessment_interview_preparation-3",
+        "title": "Interview Practice",
+        "description": "Learning about 18_interview_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/19_assessment_interview_preparation/18_interview_practice.md"
+      },
+      {
+        "id": "4-19_assessment_interview_preparation-5",
+        "title": "Ai Ml Exercises",
+        "description": "Learning about 20_ai_ml_exercises",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/19_assessment_interview_preparation/20_ai_ml_exercises.md"
+      },
+      {
+        "id": "4-19_assessment_interview_preparation-6",
+        "title": "Ai Assessment Interview Preparation Practice Questions",
+        "description": "Learning about ai_assessment_interview_preparation_practice_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/19_assessment_interview_preparation/ai_assessment_interview_preparation_practice_questions.md"
+      },
+      {
+        "id": "4-19_assessment_interview_preparation-8",
+        "title": "Ai Cheat Sheets Practice Exercises",
+        "description": "Learning about ai_cheat_sheets_practice_exercises",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/19_assessment_interview_preparation/ai_cheat_sheets_practice_exercises.md"
+      },
+      {
+        "id": "4-19_assessment_interview_preparation-4",
+        "title": "Ai Ml Cheatsheet",
+        "description": "Learning about 19_ai_ml_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/19_assessment_interview_preparation/19_ai_ml_cheatsheet.md"
+      },
+      {
+        "id": "4-19_assessment_interview_preparation-9",
+        "title": "Ai Cheat Sheets Quick Reference Guide",
+        "description": "Learning about ai_cheat_sheets_quick_reference_guide",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/19_assessment_interview_preparation/ai_cheat_sheets_quick_reference_guide.md"
+      },
+      {
+        "id": "4-19_assessment_interview_preparation-0",
+        "title": "Assessment Interview Preparation Interview Questions",
+        "description": "Learning about 07_assessment_interview_preparation_interview_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/19_assessment_interview_preparation/07_assessment_interview_preparation_interview_questions.md"
+      },
+      {
+        "id": "4-19_assessment_interview_preparation-10",
+        "title": "Ai Interview Practice Questions",
+        "description": "Learning about ai_interview_practice_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/19_assessment_interview_preparation/ai_interview_practice_questions.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-19_rag_retrieval_augmented_generation",
+    "name": "19_rag_retrieval_augmented_generation",
+    "description": "Topics for 19_rag_retrieval_augmented_generation",
+    "topics": [
+      {
+        "id": "4-19_rag_retrieval_augmented_generation-0",
+        "title": "Rag Fundamentals Theory",
+        "description": "Learning about 01_rag_fundamentals_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/19_rag_retrieval_augmented_generation/01_rag_fundamentals_theory.md"
+      },
+      {
+        "id": "4-19_rag_retrieval_augmented_generation-1",
+        "title": "Rag Practice Exercises",
+        "description": "Learning about 02_rag_practice_exercises",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/19_rag_retrieval_augmented_generation/02_rag_practice_exercises.md"
+      },
+      {
+        "id": "4-19_rag_retrieval_augmented_generation-2",
+        "title": "Rag Cheatsheet",
+        "description": "Learning about 03_rag_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/19_rag_retrieval_augmented_generation/03_rag_cheatsheet.md"
+      },
+      {
+        "id": "4-19_rag_retrieval_augmented_generation-3",
+        "title": "Rag Interview Prep",
+        "description": "Learning about 04_rag_interview_prep",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/19_rag_retrieval_augmented_generation/04_rag_interview_prep.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-2-ai-ml-intermidate",
+    "name": "Ai Ml Intermidate",
+    "description": "Topics for 2-ai-ml-intermidate",
+    "topics": [
+      {
+        "id": "4-2-4",
+        "title": "Tools Libraries Theory",
+        "description": "Learning about 13_tools_libraries_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/2-ai-ml-intermidate/13_tools_libraries_theory.md"
+      },
+      {
+        "id": "4-2-9",
+        "title": "Step1-ml Complete Simple Guide",
+        "description": "Learning about step1-ml_complete_simple_guide",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/2-ai-ml-intermidate/step1-ml_complete_simple_guide.md"
+      },
+      {
+        "id": "4-2-6",
+        "title": "Ai Tools Libraries Development Environment Simple Guide",
+        "description": "Learning about ai_tools_libraries_development_environment_simple_guide",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/2-ai-ml-intermidate/ai_tools_libraries_development_environment_simple_guide.md"
+      },
+      {
+        "id": "4-2-3",
+        "title": "Tools Libraries Practice",
+        "description": "Learning about 13_tools_libraries_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/2-ai-ml-intermidate/13_tools_libraries_practice.md"
+      },
+      {
+        "id": "4-2-1",
+        "title": "Portfolio Practice",
+        "description": "Learning about 13_portfolio_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/2-ai-ml-intermidate/13_portfolio_practice.md"
+      },
+      {
+        "id": "4-2-8",
+        "title": "Machine Learning Practice Questions",
+        "description": "Learning about machine_learning_practice_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/2-ai-ml-intermidate/machine_learning_practice_questions.md"
+      },
+      {
+        "id": "4-2-5",
+        "title": "Ai Tools Libraries Development Environment Practice Questions",
+        "description": "Learning about ai_tools_libraries_development_environment_practice_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/2-ai-ml-intermidate/ai_tools_libraries_development_environment_practice_questions.md"
+      },
+      {
+        "id": "4-2-7",
+        "title": "Ai Tools Practice Questions",
+        "description": "Learning about ai_tools_practice_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/2-ai-ml-intermidate/ai_tools_practice_questions.md"
+      },
+      {
+        "id": "4-2-2",
+        "title": "Tools Libraries Cheatsheet",
+        "description": "Learning about 13_tools_libraries_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/2-ai-ml-intermidate/13_tools_libraries_cheatsheet.md"
+      },
+      {
+        "id": "4-2-0",
+        "title": "Ai Ml Intermediate Interview Questions",
+        "description": "Learning about 05_ai_ml_intermediate_interview_questions",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/2-ai-ml-intermidate/05_ai_ml_intermediate_interview_questions.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-20_llm_fine_tuning_qlora_lora",
+    "name": "20_llm_fine_tuning_qlora_lora",
+    "description": "Topics for 20_llm_fine_tuning_qlora_lora",
+    "topics": [
+      {
+        "id": "4-20_llm_fine_tuning_qlora_lora-0",
+        "title": "Llm Fine Tuning Theory",
+        "description": "Learning about 01_llm_fine_tuning_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/20_llm_fine_tuning_qlora_lora/01_llm_fine_tuning_theory.md"
+      },
+      {
+        "id": "4-20_llm_fine_tuning_qlora_lora-1",
+        "title": "Llm Fine Tuning Practice",
+        "description": "Learning about 02_llm_fine_tuning_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/20_llm_fine_tuning_qlora_lora/02_llm_fine_tuning_practice.md"
+      },
+      {
+        "id": "4-20_llm_fine_tuning_qlora_lora-2",
+        "title": "Llm Fine Tuning Cheatsheet",
+        "description": "Learning about 03_llm_fine_tuning_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/20_llm_fine_tuning_qlora_lora/03_llm_fine_tuning_cheatsheet.md"
+      },
+      {
+        "id": "4-20_llm_fine_tuning_qlora_lora-3",
+        "title": "Llm Fine Tuning Interview Prep",
+        "description": "Learning about 04_llm_fine_tuning_interview_prep",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/20_llm_fine_tuning_qlora_lora/04_llm_fine_tuning_interview_prep.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-21_ai_agents",
+    "name": "21_ai_agents",
+    "description": "Topics for 21_ai_agents",
+    "topics": [
+      {
+        "id": "4-21_ai_agents-0",
+        "title": "Ai Agents Theory",
+        "description": "Learning about 01_ai_agents_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/21_ai_agents/01_ai_agents_theory.md"
+      },
+      {
+        "id": "4-21_ai_agents-1",
+        "title": "Ai Agents Practice",
+        "description": "Learning about 02_ai_agents_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/21_ai_agents/02_ai_agents_practice.md"
+      },
+      {
+        "id": "4-21_ai_agents-2",
+        "title": "Ai Agents Cheatsheet",
+        "description": "Learning about 03_ai_agents_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/21_ai_agents/03_ai_agents_cheatsheet.md"
+      },
+      {
+        "id": "4-21_ai_agents-3",
+        "title": "Ai Agents Interview Prep",
+        "description": "Learning about 04_ai_agents_interview_prep",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/21_ai_agents/04_ai_agents_interview_prep.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-22_knowledge_graphs",
+    "name": "22_knowledge_graphs",
+    "description": "Topics for 22_knowledge_graphs",
+    "topics": [
+      {
+        "id": "4-22_knowledge_graphs-0",
+        "title": "Knowledge Graphs Theory",
+        "description": "Learning about 01_knowledge_graphs_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/22_knowledge_graphs/01_knowledge_graphs_theory.md"
+      },
+      {
+        "id": "4-22_knowledge_graphs-1",
+        "title": "Knowledge Graphs Practice",
+        "description": "Learning about 02_knowledge_graphs_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/22_knowledge_graphs/02_knowledge_graphs_practice.md"
+      },
+      {
+        "id": "4-22_knowledge_graphs-2",
+        "title": "Knowledge Graphs Cheatsheet",
+        "description": "Learning about 03_knowledge_graphs_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/22_knowledge_graphs/03_knowledge_graphs_cheatsheet.md"
+      },
+      {
+        "id": "4-22_knowledge_graphs-3",
+        "title": "Knowledge Graphs Interview Prep",
+        "description": "Learning about 04_knowledge_graphs_interview_prep",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/22_knowledge_graphs/04_knowledge_graphs_interview_prep.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-23_computer_vision",
+    "name": "23_computer_vision",
+    "description": "Topics for 23_computer_vision",
+    "topics": [
+      {
+        "id": "4-23_computer_vision-0",
+        "title": "Computer Vision Theory",
+        "description": "Learning about 01_computer_vision_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/23_computer_vision/01_computer_vision_theory.md"
+      },
+      {
+        "id": "4-23_computer_vision-1",
+        "title": "Computer Vision Practice",
+        "description": "Learning about 02_computer_vision_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/23_computer_vision/02_computer_vision_practice.md"
+      },
+      {
+        "id": "4-23_computer_vision-2",
+        "title": "Computer Vision Cheatsheet",
+        "description": "Learning about 03_computer_vision_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/23_computer_vision/03_computer_vision_cheatsheet.md"
+      },
+      {
+        "id": "4-23_computer_vision-3",
+        "title": "Computer Vision Interview Prep",
+        "description": "Learning about 04_computer_vision_interview_prep",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/23_computer_vision/04_computer_vision_interview_prep.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-28_data_engineering",
+    "name": "28_data_engineering",
+    "description": "Topics for 28_data_engineering",
+    "topics": [
+      {
+        "id": "4-28_data_engineering-3",
+        "title": "Data Engineering Theory",
+        "description": "Learning about 28_data_engineering_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/28_data_engineering/28_data_engineering_theory.md"
+      },
+      {
+        "id": "4-28_data_engineering-2",
+        "title": "Data Engineering Practice",
+        "description": "Learning about 28_data_engineering_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/28_data_engineering/28_data_engineering_practice.md"
+      },
+      {
+        "id": "4-28_data_engineering-0",
+        "title": "Data Engineering Cheatsheet",
+        "description": "Learning about 28_data_engineering_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/28_data_engineering/28_data_engineering_cheatsheet.md"
+      },
+      {
+        "id": "4-28_data_engineering-1",
+        "title": "Data Engineering Interview Prep",
+        "description": "Learning about 28_data_engineering_interview_prep",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/28_data_engineering/28_data_engineering_interview_prep.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-29_mlops_production",
+    "name": "29_mlops_production",
+    "description": "Topics for 29_mlops_production",
+    "topics": [
+      {
+        "id": "4-29_mlops_production-3",
+        "title": "Mlops Production Theory",
+        "description": "Learning about 29_mlops_production_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/29_mlops_production/29_mlops_production_theory.md"
+      },
+      {
+        "id": "4-29_mlops_production-2",
+        "title": "Mlops Production Practice",
+        "description": "Learning about 29_mlops_production_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/29_mlops_production/29_mlops_production_practice.md"
+      },
+      {
+        "id": "4-29_mlops_production-0",
+        "title": "Mlops Production Cheatsheet",
+        "description": "Learning about 29_mlops_production_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/29_mlops_production/29_mlops_production_cheatsheet.md"
+      },
+      {
+        "id": "4-29_mlops_production-1",
+        "title": "Mlops Production Interview Prep",
+        "description": "Learning about 29_mlops_production_interview_prep",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/29_mlops_production/29_mlops_production_interview_prep.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-30_ai_ethics_governance",
+    "name": "30_ai_ethics_governance",
+    "description": "Topics for 30_ai_ethics_governance",
+    "topics": [
+      {
+        "id": "4-30_ai_ethics_governance-3",
+        "title": "Ai Ethics Governance Theory",
+        "description": "Learning about 30_ai_ethics_governance_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/30_ai_ethics_governance/30_ai_ethics_governance_theory.md"
+      },
+      {
+        "id": "4-30_ai_ethics_governance-2",
+        "title": "Ai Ethics Governance Practice",
+        "description": "Learning about 30_ai_ethics_governance_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/30_ai_ethics_governance/30_ai_ethics_governance_practice.md"
+      },
+      {
+        "id": "4-30_ai_ethics_governance-0",
+        "title": "Ai Ethics Governance Cheatsheet",
+        "description": "Learning about 30_ai_ethics_governance_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/30_ai_ethics_governance/30_ai_ethics_governance_cheatsheet.md"
+      },
+      {
+        "id": "4-30_ai_ethics_governance-1",
+        "title": "Ai Ethics Governance Interview Prep",
+        "description": "Learning about 30_ai_ethics_governance_interview_prep",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/30_ai_ethics_governance/30_ai_ethics_governance_interview_prep.md"
+      }
+    ]
+  },
+  {
+    "id": "folder-4-31_cloud_ml_infrastructure",
+    "name": "31_cloud_ml_infrastructure",
+    "description": "Topics for 31_cloud_ml_infrastructure",
+    "topics": [
+      {
+        "id": "4-31_cloud_ml_infrastructure-3",
+        "title": "Cloud Ml Infrastructure Theory",
+        "description": "Learning about 31_cloud_ml_infrastructure_theory",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/31_cloud_ml_infrastructure/31_cloud_ml_infrastructure_theory.md"
+      },
+      {
+        "id": "4-31_cloud_ml_infrastructure-2",
+        "title": "Cloud Ml Infrastructure Practice",
+        "description": "Learning about 31_cloud_ml_infrastructure_practice",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/31_cloud_ml_infrastructure/31_cloud_ml_infrastructure_practice.md"
+      },
+      {
+        "id": "4-31_cloud_ml_infrastructure-0",
+        "title": "Cloud Ml Infrastructure Cheatsheet",
+        "description": "Learning about 31_cloud_ml_infrastructure_cheatsheet",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/31_cloud_ml_infrastructure/31_cloud_ml_infrastructure_cheatsheet.md"
+      },
+      {
+        "id": "4-31_cloud_ml_infrastructure-1",
+        "title": "Cloud Ml Infrastructure Interview Prep",
+        "description": "Learning about 31_cloud_ml_infrastructure_interview_prep",
+        "duration": "1-2 hours",
+        "type": "theory",
+        "markdownPath": "/src/data/courses/phase-4-ai-ml-fundamentals/31_cloud_ml_infrastructure/31_cloud_ml_infrastructure_interview_prep.md"
+      }
+    ]
+  }
+];
+
+const allTopics = folders.flatMap(folder => folder.topics);
+
+export const phase4: Phase = {
+  id: 'phase-4',
+  number: 4,
+  title: 'AI & Machine Learning Complete',
+  description: 'Comprehensive journey from ML fundamentals through deep learning, NLP, computer vision, transformers, and production deployment. Build industry-grade AI applications.',
+  duration: '12-16 weeks',
+  skills: ['Machine Learning', 'Deep Learning', 'Neural Networks', 'NLP & LLMs', 'Computer Vision', 'Generative AI', 'MLOps'],
+  topics: allTopics,
+  folders: folders
+};
